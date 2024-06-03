@@ -33,7 +33,7 @@ async def catalog():
     for item in sneaker_brands:
         for brand in item.values():
             keyboard.add(InlineKeyboardButton(text=brand['name'],
-                                            callback_data=f"sneakers_{brand['name']}"))
+                                              callback_data=f"sneakers_{brand['name']}"))
     return keyboard.adjust(2).as_markup()
 
 

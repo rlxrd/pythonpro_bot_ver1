@@ -8,7 +8,7 @@ from app.admin import admin
 
 
 async def main():
-    bot = Bot(token='7042167885:AAHUQul0kQmWpaKL_mNIq4sHP0k5u2KR1o0',
+    bot = Bot(token='TOKEN',
               default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp = Dispatcher()
     
