@@ -6,9 +6,11 @@ from aiogram.enums import ParseMode
 from app.user import user
 from app.admin import admin
 
+from config import TOKEN
+
 
 async def main():
-    bot = Bot(token='TOKEN',
+    bot = Bot(token=TOKEN,
               default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp = Dispatcher()
     

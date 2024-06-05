@@ -4,9 +4,15 @@ from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton,
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 
 
+send_contant = ReplyKeyboardMarkup(keyboard=[
+    [KeyboardButton(text='Отправить контакт', request_contact=True)]
+])
+
+
 main = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='Каталог'), KeyboardButton(text='Корзина')],
-    [KeyboardButton(text='Поиск'), KeyboardButton(text='Контакты')]
+    [KeyboardButton(text='Поиск'), KeyboardButton(text='Контакты')],
+    [KeyboardButton(text='Регистрация')]
 ],
                            resize_keyboard=True,
                            input_field_placeholder='Выберите пункт меню.')
