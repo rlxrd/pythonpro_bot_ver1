@@ -5,6 +5,7 @@ from aiogram.enums import ParseMode
 
 from app.user import user
 from app.admin import admin
+from app.database.models import async_main
 
 from config import TOKEN
 
@@ -22,6 +23,7 @@ async def main():
 
 
 async def startup(dispatcher: Dispatcher):
+    await async_main()
     print('Starting up...')
 
 
